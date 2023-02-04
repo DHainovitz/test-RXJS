@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RxJS Playground</title>
+  <script
+
+    src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js";
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+
+    $(document).ready(function () {
+      $('#test').html('<em>It works!</em>');
+      $('#test em').css({ color: '#0c0' });
+
+      var input1 = $('#input1');
+      var input2 = $('#input2');
+      var span = $("span");
+      //span.text("zzz")
+
+      
+    });
+   
+   // var obs=rxjs.Observable.fromEvent(input1,'input');
+  </script>
+</head>
+
+<body>
+  <h1>Test</h1>
+  <p id="test"><strong style="color: #f00">It does not work</strong></p>
+
+  <input type="text" id="input1" />
+  <input type="text" id="input2" />
+  <p>combined value: <span></span></p>
+</body>
+
+</html>
